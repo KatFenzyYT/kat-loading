@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading...</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Background Music -->
+<audio id="bg-music" autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Volume Slider -->
+<div class="volume-control">
+  <label for="volume">🔊 Volume</label>
+  <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+</div>
+
+
+  <!-- Main Content -->
+<div class="content">
+  <h1>Welcome to My Server</h1>
+
+  <div class="lists">
+    <!-- Server Features -->
+    <div class="list-column">
+      <h2>Server Features:</h2>
+      <ul>
+        <li>🌆 Custom City Map</li>
+        <li>🚓 Realistic Police System</li>
+        <li>🏦 Advanced Banking</li>
+        <li>👥 Multi-Character Support</li>
+        <li>🎵 Cool Music & Vibes</li>
+      </ul>
+    </div>
+
+    <!-- Server Rules -->
+    <div class="list-column">
+      <h2>Server Rules:</h2>
+      <ul>
+        <li>🚫 No RDM or VDM</li>
+        <li>🗣️ Use realistic voice chat</li>
+        <li>🤝 Respect all players & staff</li>
+        <li>🎭 Stay in character (RP)</li>
+        <li>⚠️ Breaking rules = ban</li>
+      </ul>
+    </div>
+  </div>
+    <p>Loading, please wait...</p>
+
+  <!-- Progress Bar -->
+  <div class="progress-bar">
+    <div class="progress"></div>
+  </div>
+</div>
+
+
+
+<script>
+  const music = document.getElementById('bg-music');
+  const volumeSlider = document.getElementById('volume');
+
+  // Set initial volume
+  music.volume = volumeSlider.value;
+
+  // Update volume when slider changes
+  volumeSlider.addEventListener('input', () => {
+    music.volume = volumeSlider.value;
+  });
+</script>
+
+
+</body>
+</html>
