@@ -5,7 +5,7 @@ A Simple Fivem Loading Screen With logo and background Image And music
 This project is licensed under MIT License - see LICENSE for details.
 
 👏 Credits
-Your Name (KatFenzyYT) - Creator & Maintainer
+@KatFenzyYT - Creator & Maintainer
 
 Contributors (emoji key)
 
